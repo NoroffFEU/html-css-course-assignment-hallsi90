@@ -8,7 +8,8 @@
       name="description"
       content="The Checkout Page of the Rainydays website. Rainydays is a company that sells premium quality rain jackets."
     />
-    <link rel="stylesheet" href="css/styles_checkout.css" />
+    <link rel="stylesheet" href="css/global_styles.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
     <script
       src="https://kit.fontawesome.com/bf1267e431.js"
       crossorigin="anonymous"
@@ -20,23 +21,42 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div class="header-logo">
         <a href="index.html">
           <img
-            src="pictures/logo/rainydays_logo_mountain.png"
-            alt="Rainydays mountain logo with name"
+            src="pictures/logo/rainydays_logo_just_mountain.png"
+            alt="Rainydays mountain logo"
         /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass" style="color: #0a3641"></i>
+        <a href="checkout.html"
+          ><i class="fa-solid fa-cart-shopping" style="color: #0a3641"></i
+        ></a>
+        <label for="hamburger-menu"
+          ><i class="fa-solid fa-bars hamburger-menu" style="color: #0a3641"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
       </div>
     </header>
     <main>
       <h1>Checkout</h1>
       <div class="checkout-container">
         <div class="left-container">
-          <p>your info</p>
+          <h2>Your information</h2>
           <form action=""></form>
         </div>
         <div class="left-container">
-          <p>paymen metjf</p>
+          <h2>Payment method</h2>
           <form action=""></form>
         </div>
         <div class="right-container">
@@ -62,8 +82,6 @@
       <a href="checkoutsuccess.html">
         <button class="cta-button">Pay now</button></a
       >
-    </main>
-    <footer>
       <div class="payment-container">
         <div class="payment">
           <img src="pictures/icons/klarna.svg" alt="klarna icon" />
@@ -71,6 +89,129 @@
           <img src="pictures/icons/visa.svg" alt="visa icon" />
           <img src="pictures/icons/mastercard.svg" alt="mastercard icon" />
           <img src="pictures/icons/paypal.svg" alt="paypal icon" />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>SHOP</h4>
+          <ul>
+            <li><a href="women.html">Women's</a></li>
+            <li><a href="#">Men's</a></li>
+            <li><a href="#">By Activity</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>HELP</h4>
+          <ul>
+            <li><a href="#">Live Chat</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>ABOUT RAINYDAYS</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>REPAIR AND CARE</h4>
+          <ul>
+            <li><a href="#">Repair</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">Product Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>INFO</h4>
+          <ul>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Cookies and Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>FOLLOW RAINYDAYS</h4>
+          <ul class="social-media-list">
+            <li>
+              <a href="#"
+                ><i
+                  class="fa-brands fa-square-instagram"
+                  style="color: #0a3641"
+                ></i>
+                Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook" style="color: #0a3641"></i
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-twitter" style="color: #0a3641"></i>
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-tiktok" style="color: #0a3641"></i>
+                TikTok</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-youtube" style="color: #0a3641"></i>
+                YouTube</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin" style="color: #0a3641"></i>
+                LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="subscribe">
+          <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
+          <form>
+            <div class="form-group">
+              <input type="email" placeholder="name@example.com" />
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+          <p>
+            Sign up to our newsletter and receive monthly newsletters with
+            amazing offers! Be the first to know about new products and sales!
+          </p>
+        </div>
+
+        <div class="footer-logo">
+          <a href="index.html">
+            <img
+              src="pictures/logo/rainydays_logo_full.png"
+              alt="Rainydays Logo"
+            />
+          </a>
         </div>
       </div>
     </footer>

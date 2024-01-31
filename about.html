@@ -8,7 +8,8 @@
       name="description"
       content="The About Us Page of the Rainydays website. Rainydays is a company that sells premium quality rain jackets."
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/global_styles.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <script
       src="https://kit.fontawesome.com/bf1267e431.js"
       crossorigin="anonymous"
@@ -20,31 +21,31 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img
-              class="mountainlogo"
-              src="pictures/logo/rainydays_logo_just_mountain.png"
-              alt="Rainydays mountain logo"
-          /></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="women.html">Women</a></li>
-            <li><a href="">Men</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="icons">
-          <i class="fa-solid fa-magnifying-glass" style="color: #0a3641"></i>
-          <a href="checkout.html"
-            ><i class="fa-solid fa-cart-shopping" style="color: #0a3641"></i
-          ></a>
-          <i class="fa-solid fa-bars hamburger-menu" style="color: #0a3461"></i>
-        </div>
+      <div class="header-logo">
+        <a href="index.html">
+          <img
+            src="pictures/logo/rainydays_logo_just_mountain.png"
+            alt="Rainydays mountain logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <i class="fa-solid fa-magnifying-glass" style="color: #0a3641"></i>
+        <a href="checkout.html"
+          ><i class="fa-solid fa-cart-shopping" style="color: #0a3641"></i
+        ></a>
+        <label for="hamburger-menu"
+          ><i class="fa-solid fa-bars hamburger-menu" style="color: #0a3641"></i
+        ></label>
+        <input type="checkbox" id="hamburger-menu" />
       </div>
     </header>
     <main>
@@ -71,14 +72,16 @@
         retailers in the market. We've accomplished this through our commitment
         to quality, innovation, and customer satisfaction.
       </p>
-      <img
-        src="pictures/about/silhouette_of_people_raising_hands.jpg"
-        alt="silhouette photography of persons raising hands while standing on island"
-      />
-      <img
-        src="pictures/about/woman_sittingon_hill.jpg"
-        alt="woman writing while sitting on hill with mountain background"
-      />
+      <div class="about_img_container">
+        <img
+          src="pictures/about/silhouette_of_people_raising_hands.jpg"
+          alt="silhouette photography of persons raising hands while standing on island"
+        />
+        <img
+          src="pictures/about/woman_sittingon_hill.jpg"
+          alt="woman writing while sitting on hill with mountain background"
+        />
+      </div>
       <h2>Our Products</h2>
       <p>
         Our rain jackets are designed with the modern adventurer in mind. We
@@ -184,59 +187,51 @@
               <a href="#"
                 ><i
                   class="fa-brands fa-square-instagram"
-                  style="color: #0a3461"
+                  style="color: #0a3641"
                 ></i>
                 Instagram</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fa-brands fa-facebook" style="color: #0a3461"></i
+                ><i class="fa-brands fa-facebook" style="color: #0a3641"></i
                 >Facebook</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fa-brands fa-twitter" style="color: #0a3461"></i>
+                ><i class="fa-brands fa-twitter" style="color: #0a3641"></i>
                 Twitter</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fa-brands fa-tiktok" style="color: #0a3461"></i>
+                ><i class="fa-brands fa-tiktok" style="color: #0a3641"></i>
                 TikTok</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fa-brands fa-youtube" style="color: #0a3461"></i>
+                ><i class="fa-brands fa-youtube" style="color: #0a3641"></i>
                 YouTube</a
               >
             </li>
             <li>
               <a href="#"
-                ><i class="fa-brands fa-linkedin" style="color: #0a3461"></i>
+                ><i class="fa-brands fa-linkedin" style="color: #0a3641"></i>
                 LinkedIn</a
               >
             </li>
           </ul>
         </div>
-
-        <div class="footer-column">
+      </div>
+      <div class="footer-bottom">
+        <div class="subscribe">
           <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
           <form>
             <div class="form-group">
-              <input
-                type="email"
-                placeholder="name@example.com"
-                style="background-color: #0a3641; color: #e7ebec"
-              />
-              <button
-                type="submit"
-                style="background-color: #ffffff; color: #0a3641"
-              >
-                Submit
-              </button>
+              <input type="email" placeholder="name@example.com" />
+              <button type="submit">Submit</button>
             </div>
           </form>
           <p>
@@ -244,15 +239,15 @@
             amazing offers! Be the first to know about new products and sales!
           </p>
         </div>
-      </div>
 
-      <div class="footer-logo">
-        <a href="index.html">
-          <img
-            src="pictures/logo/rainydays_logo_full.png"
-            alt="Rainydays Logo"
-          />
-        </a>
+        <div class="footer-logo">
+          <a href="index.html">
+            <img
+              src="pictures/logo/rainydays_logo_full.png"
+              alt="Rainydays Logo"
+            />
+          </a>
+        </div>
       </div>
     </footer>
   </body>
