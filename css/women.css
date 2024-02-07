@@ -9,15 +9,10 @@ main {
   margin: 30px;
   color: #ffffff;
 }
-h1 {
-  font-size: 4.8rem;
-  text-align: center;
-  margin: 50px 10px;
-}
 
 .shop-womens-jackets h1 {
+  font-size: 1.9rem;
   text-align: left;
-  font-size: 3.6rem;
 }
 p {
   font-size: 2rem;
@@ -49,21 +44,27 @@ p {
 }
 /* MEDIA SCREENS */
 
-@media screen and (max-width: 484px) {
+@media screen and (min-width: 375px) {
   .shop-womens-jackets h1 {
-    font-size: 2.5rem;
-  }
-
-  @media screen and (min-width: 494px) {
-    main {
-      margin: 50px;
-    }
+    font-size: 2.7rem;
   }
 }
-
 @media screen and (min-width: 485px) {
   .product-container {
     grid-template-columns: 1fr 1fr;
+  }
+  .shop-womens-jackets h1 {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (min-width: 613px) {
+  main {
+    margin: 50px;
+  }
+
+  .shop-womens-jackets h1 {
+    font-size: 4.8rem;
   }
 }
 @media screen and (min-width: 750px) {

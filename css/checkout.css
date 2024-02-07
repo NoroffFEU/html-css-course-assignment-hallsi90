@@ -2,31 +2,33 @@ body {
   background-color: #0a3641;
 }
 main {
-  margin: 50px;
+  margin: 30px;
   color: #ffffff;
 }
 a {
   text-decoration: none;
 }
 .checkout-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.your-order,
+.your-information,
+fieldset {
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.product-information-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
-
-.left-container {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-}
-
-.right-container {
-  flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
+.product-information h3 {
+  margin-top: 0;
 }
 .product-picture {
   width: 100%;
@@ -34,11 +36,40 @@ a {
   background-color: #d9d9d9;
   border-radius: 5px;
 }
+
+.personal-information-container form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.personal-information-container input,
+.personal-information-container textarea {
+  padding: 5px;
+  border: solid 1px #ffffff;
+  border-radius: 5px;
+  margin: 10px 0px;
+  font-size: 1.5rem;
+  background-color: #0a3641;
+  color: #ffffff;
+}
+.personal-information-container label {
+  font-size: 1.5em;
+}
+
+.payment-method-container input,
+.payment-method-container label {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+#payment_method {
+  margin: 10px 10px 10px 0px;
+}
+
 .cta-button {
   color: #0a3641;
   background-color: #ffffff;
-  padding: 10px 110px 10px 110px;
-  font-size: 1.8rem;
+  padding: 10px 60px 10px 60px;
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
@@ -47,19 +78,24 @@ a {
   border: none;
   box-shadow: 5px 5px 5px black;
 }
+.cta-button:hover {
+  color: #ffffff;
+  background-color: #0a3641;
+  border: 2px solid #ffffff;
+  transition: ease-in-out 200ms;
+}
 .payment {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 5px;
 }
-.payment-container {
+.payment-icons-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .payment img {
-  width: 50px;
-  height: 25px;
-  margin: 10px;
+  width: 35px;
+  height: 20px;
 }

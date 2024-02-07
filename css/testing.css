@@ -9,40 +9,17 @@ main {
 h1 {
   font-size: 2.6rem;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 h2 {
   font-size: 2.3rem;
-  margin-top: 40px;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.9rem;
 }
 p {
-  font-size: 1.5rem;
-}
-
-.check-icon {
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.order-details {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 1px solid #5b7880;
-  padding-left: 5px;
-}
-
-.subtotal {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid #5b7880;
-  padding-left: 5px;
+  font-size: 1.8rem;
 }
 .order-img img {
   display: flex;
@@ -51,11 +28,23 @@ p {
   width: 50%;
   margin: 5px 0px 5px 0px;
 }
+
+.order-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid #5b7880;
+  padding-left: 5px;
+}
+.subtotal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #5b7880;
+  padding-left: 5px;
+}
 .order-information {
   display: grid;
   grid-template-columns: 1fr;
 }
-/* MEDIA SCREENS */
 
 @media screen and (min-width: 375px) {
   h1 {
@@ -63,9 +52,6 @@ p {
   }
   h2 {
     font-size: 3rem;
-  }
-  p {
-    font-size: 1.8rem;
   }
 }
 @media screen and (min-width: 450px) {
@@ -80,20 +66,6 @@ p {
   main {
     margin: 50px;
   }
-  h1 {
-    font-size: 4.8rem;
-    text-align: center;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  .check-icon {
-    font-size: 10rem;
-    margin-top: 50px;
-  }
 }
 @media screen and (min-width: 700px) {
   .order-details {
@@ -102,7 +74,7 @@ p {
   .subtotal {
     grid-template-columns: 1fr;
   }
-  .order {
+  .order-info {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }

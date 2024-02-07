@@ -4,7 +4,6 @@ body {
 img {
   width: 100%;
   border-radius: 5px;
-  margin: 10px 0px;
 }
 
 main {
@@ -12,12 +11,12 @@ main {
   color: #ffffff;
 }
 h1 {
-  font-size: 4.8rem;
-  text-align: center;
+  font-size: 2.6rem;
+  text-align: left;
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 2.3rem;
 }
 p {
   font-size: 1.8rem;
@@ -28,20 +27,32 @@ p {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 /* MEDIA SCREENS */
-
-@media screen and (max-width: 493px) {
+@media screen and (min-width: 375px) {
   h1 {
     font-size: 3.3rem;
-    text-align: left;
   }
   h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
-@media screen and (min-width: 494px) {
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.7rem;
+  }
+}
+@media screen and (min-width: 600px) {
   main {
     margin: 50px;
+  }
+  h1 {
+    font-size: 4.8rem;
+    text-align: center;
+  }
+  h2 {
+    font-size: 4rem;
   }
 }

@@ -8,7 +8,7 @@
       name="description"
       content="The Contact Us Page of the Rainydays website. Rainydays is a company that sells premium quality rain jackets."
     />
-    <link rel="stylesheet" href="css/global_styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <script
       src="https://kit.fontawesome.com/bf1267e431.js"
@@ -28,24 +28,27 @@
             alt="Rainydays mountain logo"
         /></a>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="women.html">Women</a></li>
-          <li><a href="">Men</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="menu">
+        <input type="checkbox" id="hamburger-menu" />
+        <label for="hamburger-menu"
+          ><i class="fa-solid fa-bars hamburger-menu" style="color: #0a3641"></i
+        ></label>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="">Men</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="icons">
         <i class="fa-solid fa-magnifying-glass" style="color: #0a3641"></i>
         <a href="checkout.html"
           ><i class="fa-solid fa-cart-shopping" style="color: #0a3641"></i
         ></a>
-        <label for="hamburger-menu"
-          ><i class="fa-solid fa-bars hamburger-menu" style="color: #0a3641"></i
-        ></label>
-        <input type="checkbox" id="hamburger-menu" />
       </div>
     </header>
     <main>
@@ -59,7 +62,7 @@
         rainydays@gmail.com or call us on 555-432-165.
       </p>
       <div class="contact-container">
-        <form action="">
+        <form action="submit">
           <label for="first_name">First name</label>
           <input
             type="text"
