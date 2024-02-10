@@ -1,0 +1,35 @@
+body {
+  background-color: #0a3641;
+}
+main {
+  margin: 30px;
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  color: #0a3641;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 350px;
+}
+
+@media screen and (min-width: 450px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 730px) {
+  h1 {
+    font-size: 4rem;
+  }
+}

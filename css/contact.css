@@ -13,6 +13,7 @@ h1 {
 p {
   font-size: 1.8rem;
 }
+
 .contact-container {
   display: flex;
   align-items: center;
@@ -39,7 +40,7 @@ p {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.contact-container button {
+.cta-button {
   background-color: #0a3641;
   color: #ffffff;
   font-size: 1.8rem;
@@ -48,8 +49,9 @@ p {
   margin: 10px 0px;
   border-radius: 8px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px black;
 }
-.contact-container button:hover {
+.cta-button:hover {
   color: #0a3641;
   background-color: #ffffff;
   border: 3px solid #0a3641;

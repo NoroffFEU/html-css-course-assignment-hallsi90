@@ -1,4 +1,49 @@
 /* GLOBAL STYLES*/
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-icon,
+.close-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-bar {
+  display: none;
+  position: absolute;
+  top: 39px;
+  right: 0;
+  background-color: #ffffff;
+  border: 1px solid #b3c1c4;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+#search-toggle:checked + .search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-bar input[type="text"] {
+  width: 150px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  border-bottom: 1px solid #b3c1c4;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
 
 html {
   font-size: 62.5%;
@@ -54,7 +99,7 @@ nav a {
 
 .icons {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   font-size: 1.8rem;
 }
 
@@ -82,6 +127,7 @@ nav a {
   top: -10px;
   opacity: 0.9;
 }
+
 /* FOOTER */
 
 footer {
@@ -185,7 +231,7 @@ form {
   .menu {
     display: flex;
     order: 1;
-    padding-left: 2px;
+    padding-left: 20px;
   }
   nav li {
     border: 2px solid #b3c1c4;
@@ -282,4 +328,45 @@ form {
   nav li {
     padding: 10px 50px;
   }
+}
+
+.introduction-image {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url(/images/home/start/two_people_hiking_on_mountain_during_daytime.jpg);
+}
+.introduction-content {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.introduction-content h1 {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.button-container {
+  position: absolute;
+  bottom: 150px;
+  left: 70%;
+  transform: translate(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.introduction-images-part2 {
+  width: 100%;
+  background-image: url(/images/home/start/man_ice_skiing_on_hill_cropped.jpg),
+    url(/images/home/start/man_with_snowboard_standing_on_top_of_mountain_cropped.jpg),
+    url(/images/home/start/two_people_canoeing.jpg);
+  background-repeat: no-repeat;
+  background-position: left, center, right;
+  background-size: 450px, 500px, 200px;
 }
