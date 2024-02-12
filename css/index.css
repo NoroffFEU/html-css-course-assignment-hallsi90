@@ -21,7 +21,7 @@ a {
 }
 .top-image {
   height: 100%; /* Adjust the height of the top image */
-  background-image: url(../images/home/start/two_people_hiking_on_mountain_during_daytime.jpg);
+  background-image: url("../images/home/start/two_people_hiking_on_mountain_during_daytime.jpg");
   margin-bottom: 2px;
   position: relative;
   background-size: cover;
@@ -85,21 +85,21 @@ a {
 .bottom-image-1 {
   flex: 2;
   height: 100%; /* Adjust the height of the horizontal images */
-  background-image: url(../images/home/start/man_ice_skiing_on_hill_cropped_and_resized.jpg);
+  background-image: url("../images/home/start/man_ice_skiing_on_hill_cropped_and_resized.jpg");
   background-position: right;
   background-size: cover;
 }
 .bottom-image-2 {
   flex: 2;
   height: 100%; /* Adjust the height of the horizontal images */
-  background-image: url(../images/home/start/man_with_snowboard_standing_on_top_of_mountain_cropped_and_resized.jpg);
+  background-image: url("../images/home/start/man_with_snowboard_standing_on_top_of_mountain_cropped_and_resized.jpg");
   background-position: left;
   background-size: cover;
 }
 .bottom-image-3 {
   flex: 1;
   height: 100%; /* Adjust the height of the horizontal images */
-  background-image: url(../images/home/start/two_people_canoeing_resized.jpg);
+  background-image: url("../images/home/start/two_people_canoeing_resized.jpg");
   background-position: center;
   background-size: cover;
 }
