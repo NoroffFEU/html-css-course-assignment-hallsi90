@@ -78,6 +78,7 @@ section {
   height: 20vh;
   display: flex;
   gap: 2px;
+  margin-bottom: 2px;
 }
 
 .bottom-image-1 {
@@ -293,6 +294,7 @@ h3 {
   }
   .bottom-background-images {
     gap: 10px;
+    margin-bottom: 10px;
   }
 }
 
