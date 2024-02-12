@@ -173,14 +173,13 @@ h3 {
   }
   .overlay h2 {
     font-size: 1.8rem;
-    top: 93%;
+    top: 92%;
   }
   .explore button {
-    padding: 10px;
     font-size: 1.2rem;
   }
   .introduction-content-container {
-    height: 60vh;
+    height: 70vh;
   }
   .bottom-background-images {
     height: 30vh;
@@ -193,6 +192,10 @@ h3 {
   .introduction-content h2 {
     font-size: 2.5rem;
     padding-top: 50px;
+  }
+  .explore button {
+    padding: 10px;
+    font-size: 1.5rem;
   }
   h3 {
     font-size: 2.5rem;
@@ -215,9 +218,7 @@ h3 {
     font-size: 2.3rem;
     top: 92%;
   }
-  .explore button {
-    font-size: 1.5rem;
-  }
+
   .introduction-content-container {
     height: 70vh;
   }
