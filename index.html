@@ -31,9 +31,8 @@
       <div class="menu">
         <input type="checkbox" id="hamburger-menu" />
         <label for="hamburger-menu"
-          ><i class="fa-solid fa-bars hamburger-menu"></i
+          ><i class="fa-solid fa-bars hamburger-menu" aria-label="Menu"></i
         ></label>
-
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -45,24 +44,53 @@
         </nav>
       </div>
       <div class="icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-container">
+          <input
+            type="checkbox"
+            id="toggle-search"
+            class="toggle-search-checkbox"
+          />
+          <label for="toggle-search" class="search-icon">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              aria-label="Go to search bar"
+            ></i>
+          </label>
+          <div class="search-dropdown">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="search-input"
+              id="search-input"
+            />
+          </div>
+        </div>
         <a href="checkout.html"
-          ><i class="fa-solid fa-cart-shopping" value="1"></i
+          ><i
+            class="fa-solid fa-cart-shopping"
+            value="1"
+            aria-label="Go to checkout"
+          ></i
         ></a>
       </div>
     </header>
-    <div class="introduction-content-container">
-      <div class="introduction-image">
-        <h1>Pushing the Comfort Zone</h1>
-        <div class="explore">
-          <button>Explore Women's</button>
+    <section>
+      <div class="introduction-content-container">
+        <div class="background top-image explore">
+          <h1>Pushing the Comfort Zone</h1>
+          <a href="women.html"><button>Explore Women's</button></a>
           <button>Explore Men's</button>
         </div>
+        <div class="overlay">
+          <h2>Premium jackets for active lifestyles</h2>
+        </div>
+        <div class="bottom-background-images">
+          <div class="bottom-image-1"></div>
+          <div class="bottom-image-2"></div>
+          <div class="bottom-image-3"></div>
+        </div>
       </div>
-      <div class="introduction-content">
-        <h2>Premium jackets for active lifestyles</h2>
-      </div>
-    </div>
+    </section>
     <main>
       <h3>Our most popular jackets for women</h3>
       <div class="product-container">
@@ -243,7 +271,11 @@
           <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
           <form action="subscribe_response.html">
             <div class="form-group">
-              <input type="email" placeholder="name@example.com" />
+              <input
+                type="email"
+                placeholder="name@example.com"
+                aria-label="Type in your email address"
+              />
               <button type="submit">Submit</button>
             </div>
           </form>

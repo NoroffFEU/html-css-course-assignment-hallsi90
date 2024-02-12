@@ -33,6 +33,9 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+.fa-heart {
+  color: #ffffff;
+}
 .wishlist-container {
   display: flex;
   justify-content: space-between;

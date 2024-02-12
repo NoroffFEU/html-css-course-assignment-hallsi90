@@ -82,6 +82,38 @@ nav a {
   top: -10px;
   opacity: 0.9;
 }
+.search-container {
+  position: relative;
+}
+
+.toggle-search-checkbox {
+  display: none;
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: -150px;
+  display: none;
+  z-index: 1000; /* Set a higher z-index value */
+}
+
+.toggle-search-checkbox:checked + .search-icon + .search-dropdown {
+  display: block;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #0a3641;
+  border-radius: 5px;
+  outline: none;
+}
+
 /* FOOTER */
 
 footer {

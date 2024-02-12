@@ -24,6 +24,12 @@ p {
 a {
   text-decoration: none;
 }
+fieldset {
+  border: none;
+}
+legend {
+  display: none;
+}
 .checkout-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -32,7 +38,7 @@ a {
 
 .your-order,
 .your-information,
-fieldset {
+.payment-method {
   box-sizing: border-box;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -78,12 +84,13 @@ fieldset {
 .payment-method-container input,
 .payment-method-container label {
   font-size: 1.5rem;
-  padding: 10px;
-}
-#payment_method {
-  margin: 10px 10px 10px 0px;
+  margin: 5px 5px;
 }
 
+.button-container {
+  margin: 0 auto;
+  max-width: none;
+}
 .cta-button {
   color: #0a3641;
   background-color: #ffffff;
@@ -149,14 +156,18 @@ fieldset {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   .personal-information-container input,
   .personal-information-container label {
     font-size: 2rem;
   }
-
+  .payment-method-container {
+    padding-bottom: 10px;
+  }
   .payment-method-container input,
   .payment-method-container label {
     font-size: 2rem;
+    margin: 10px;
   }
 
   .cta-button {

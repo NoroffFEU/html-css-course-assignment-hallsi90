@@ -31,9 +31,8 @@
       <div class="menu">
         <input type="checkbox" id="hamburger-menu" />
         <label for="hamburger-menu"
-          ><i class="fa-solid fa-bars hamburger-menu"></i
+          ><i class="fa-solid fa-bars hamburger-menu" aria-label="Menu"></i
         ></label>
-
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -45,12 +44,37 @@
         </nav>
       </div>
       <div class="icons">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-container">
+          <input
+            type="checkbox"
+            id="toggle-search"
+            class="toggle-search-checkbox"
+          />
+          <label for="toggle-search" class="search-icon">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              aria-label="Go to search bar"
+            ></i>
+          </label>
+          <div class="search-dropdown">
+            <input
+              type="text"
+              placeholder="Search..."
+              class="search-input"
+              id="search-input"
+            />
+          </div>
+        </div>
         <a href="checkout.html"
-          ><i class="fa-solid fa-cart-shopping" value="1"></i
+          ><i
+            class="fa-solid fa-cart-shopping"
+            value="1"
+            aria-label="Go to checkout"
+          ></i
         ></a>
       </div>
     </header>
+
     <main>
       <h1>Checkout</h1>
       <div class="checkout-container">
@@ -62,7 +86,6 @@
                 <img
                   src="images/products/women/rain_slayer.jpg"
                   alt="Women's Rain Slayer"
-                  width="100px"
                   class="product-picture"
               /></a>
             </div>
@@ -82,11 +105,12 @@
         <div class="your-information">
           <h2>Your information</h2>
           <div class="personal-information-container">
-            <form action="">
+            <form>
               <label for="first_name">First name</label>
               <input
                 type="text"
                 name="first_name"
+                id="first_name"
                 class="contact-information"
                 required
               />
@@ -94,6 +118,7 @@
               <input
                 type="text"
                 name="last_name"
+                id="last_name"
                 class="contact-information"
                 required
               />
@@ -101,6 +126,7 @@
               ><input
                 type="text"
                 name="address"
+                id="address"
                 class="contact-information"
                 required
               />
@@ -108,6 +134,7 @@
               ><input
                 type="text"
                 name="postal_code"
+                id="postal_code"
                 class="contact-information"
                 required
               />
@@ -115,6 +142,7 @@
               ><input
                 type="text"
                 name="city"
+                id="city"
                 class="contact-information"
                 required
               />
@@ -122,6 +150,7 @@
               <input
                 type="email"
                 name="email"
+                id="email"
                 class="contact-information"
                 required
               />
@@ -129,53 +158,56 @@
               ><input
                 type="number"
                 name="number"
+                id="number"
                 class="contact-information"
                 required
               />
             </form>
           </div>
         </div>
-        <fieldset>
+        <div class="payment-method">
           <h2>Payment method</h2>
           <div class="payment-method-container">
-            <div>
+            <fieldset>
+              <legend>Choose your payment method</legend>
               <input
                 type="radio"
                 name="payment_method"
-                id="payment_method"
+                id="klarna"
                 value="klarna"
-              /><label for="klarna" id="klarna">Klarna </label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="payment_method"
-                id="payment_method"
-                value="vipps"
-              /><label for="vipps">Vipps </label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="payment_method"
-                id="payment_method"
-                value="credit_card"
-              /><label for="credit_card">Credit Card </label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                name="payment_method"
-                id="payment_method"
-                value="paypal"
-              /><label for="paypal">PayPal </label>
-            </div>
+              /><label for="klarna">Klarna </label>
+              <div>
+                <input
+                  type="radio"
+                  name="payment_method"
+                  id="vipps"
+                  value="vipps"
+                /><label for="vipps">Vipps </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="payment_method"
+                  id="credit_card"
+                  value="credit_card"
+                /><label for="credit_card">Credit Card </label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="payment_method"
+                  id="paypal"
+                  value="paypal"
+                /><label for="paypal">PayPal </label>
+              </div>
+            </fieldset>
           </div>
-        </fieldset>
+        </div>
       </div>
-      <a href="checkoutsuccess.html">
-        <button class="cta-button">Pay now</button></a
-      >
+      <form action="checkoutsuccess.html" class="button-container">
+        <button class="cta-button">Pay now</button>
+      </form>
+
       <div class="payment-icons-container">
         <div class="payment">
           <img src="images/icons/klarna.svg" alt="klarna icon" />
@@ -269,7 +301,11 @@
           <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
           <form action="subscribe_response.html">
             <div class="form-group">
-              <input type="email" placeholder="name@example.com" />
+              <input
+                type="email"
+                placeholder="name@example.com"
+                aria-label="Type in your email address"
+              />
               <button type="submit">Submit</button>
             </div>
           </form>
