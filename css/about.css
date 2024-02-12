@@ -1,15 +1,7 @@
-body {
-  background-color: #0a3641;
-}
 img {
-  width: 100%;
   border-radius: 5px;
 }
 
-main {
-  margin: 30px;
-  color: #ffffff;
-}
 h1 {
   font-size: 2.6rem;
   text-align: left;

@@ -1,13 +1,24 @@
 /* GLOBAL STYLES*/
+@import "imports/variables.css";
 
 html {
   font-size: 62.5%;
 }
 body {
+  background-color: var(--main-blue-color);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
 }
-
+main {
+  margin: 30px;
+  color: var(--main-white-color);
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
 /* HEADER */
 
 header {
@@ -15,8 +26,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #ffffff;
-  color: #0a3641;
+  background-color: var(--main-white-color);
+  color: var(--main-blue-color);
 }
 
 nav {
@@ -34,19 +45,19 @@ nav ul {
 nav li {
   display: block;
   padding: 10px 20px;
-  background-color: #b3c1c4;
+  background-color: var(--hamburger-menu-list-color);
 }
 
 nav a {
   text-decoration: none;
-  color: #0a3641;
+  color: var(--main-blue-color);
   font-size: 1.8rem;
   font-weight: bold;
 }
 
 .logo a {
   text-decoration: none;
-  color: #0a3641;
+  color: var(--main-blue-color);
 }
 .header-logo a img {
   width: 100px;
@@ -68,13 +79,13 @@ nav a {
 
 .fa-solid,
 .fa-brands {
-  color: #0a3641;
+  color: var(--main-blue-color);
 }
 .fa-cart-shopping:after {
   content: attr(value);
   font-size: 10px;
-  color: #ffffff;
-  background: #0a3641;
+  color: var(--main-white-color);
+  background: var(--main-blue-color);
   border-radius: 50%;
   padding: 3px 5px;
   position: relative;
@@ -109,7 +120,7 @@ nav a {
 .search-input {
   width: 100%;
   padding: 8px;
-  border: 1px solid #0a3641;
+  border: 1px solid var(--main-blue-color);
   border-radius: 5px;
   outline: none;
 }
@@ -117,8 +128,8 @@ nav a {
 /* FOOTER */
 
 footer {
-  background-color: #ffffff;
-  color: #0a3641;
+  background-color: var(--main-white-color);
+  color: var(--main-blue-color);
   padding: 0px 20px;
   margin-top: 50px;
 }
@@ -150,7 +161,7 @@ footer li {
 
 .footer-column a {
   text-decoration: none;
-  color: #0a3641;
+  color: var(--main-blue-color);
 }
 
 .social-media-list li {
@@ -160,7 +171,7 @@ footer li {
 form {
   max-width: 280px;
   margin-top: 10px;
-  background-color: #0a3641;
+  background-color: var(--main-blue-color);
   border-radius: 8px;
   padding: 5px;
 }
@@ -169,15 +180,15 @@ form {
   padding: 10px 25px;
   border: none;
   border-radius: 8px 0 0 8px;
-  background-color: #0a3641;
+  background-color: var(--main-blue-color);
   color: #e7ebec;
 }
 .subscribe {
   max-width: 300px;
 }
 .subscribe form button {
-  background-color: #ffffff;
-  color: #0a3641;
+  background-color: var(--main-white-color);
+  color: var(--main-blue-color);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -220,7 +231,7 @@ form {
     padding-left: 2px;
   }
   nav li {
-    border: 2px solid #b3c1c4;
+    border: 2px solid var(--hamburger-menu-list-color);
   }
   /* MEDIA QUERY FOOTER */
   .footer-container {
@@ -260,8 +271,8 @@ form {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    color: #0a3641;
+    background-color: var(--main-white-color);
+    color: var(--main-blue-color);
     padding: 15px;
   }
 
@@ -274,7 +285,7 @@ form {
     display: inline-block;
     padding: 10px;
     font-size: 1.8rem;
-    background-color: #ffffff;
+    background-color: var(--main-white-color);
   }
 
   .header-logo a img {

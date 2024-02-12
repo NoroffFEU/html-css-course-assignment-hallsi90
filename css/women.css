@@ -1,14 +1,4 @@
-body {
-  background-color: #0a3641;
-}
 /* MAIN */
-img {
-  width: 100%;
-}
-main {
-  margin: 30px;
-  color: #ffffff;
-}
 
 .shop-womens-jackets h1 {
   font-size: 1.9rem;
@@ -22,13 +12,13 @@ p {
   grid-template-columns: 1fr;
 }
 .product-womens-jackets {
-  background-color: #5b7880;
+  background-color: var(--design-details-color);
   text-align: center;
   margin: 10px;
 }
 .product-womens-jackets a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--main-white-color);
 }
 .product-womens-jackets img {
   width: 100%;

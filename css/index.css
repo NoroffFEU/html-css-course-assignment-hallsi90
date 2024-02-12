@@ -1,19 +1,12 @@
-body {
-  background-color: #0a3641;
-  color: #ffffff;
-}
+/* GLOBAL STYLES*/
 
-main {
-  margin: 20px;
-}
 section {
   margin-bottom: 40px;
 }
-a {
-  text-decoration: none;
-}
+
 .introduction-content-container {
-  background-color: #ffffff;
+  color: var(--main-white-color);
+  background-color: var(--main-white-color);
   position: relative;
   height: 50vh;
   display: flex;
@@ -40,29 +33,34 @@ a {
   ); /* Center the h1 within the .background div */
   z-index: 2; /* Ensure the h1 is above the overlay */
 }
-
-.explore button {
+.explore-button-container {
   display: block;
   position: relative;
   top: 60%;
   left: 50%;
   z-index: 2; /* Ensure the h1 is above the overlay */
-
+}
+.explore-button-container button {
   margin-top: 10px;
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid #0a3641;
+  border: 2px solid var(--main-blue-color);
   cursor: pointer;
-  background: #ffffff;
-  color: #0a3641;
+  background: var(--main-white-color);
+  color: var(--main-blue-color);
   font-size: 1rem;
   font-weight: bold;
 }
 
-.explore button:hover {
-  background-color: #0a3641;
-  color: #ffffff;
+.explore-button-container button:hover {
+  background-color: var(--main-blue-color);
+  color: var(--main-white-color);
   transition: ease-in-out 200ms;
+}
+.explore-button-container form {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 .overlay h2 {
   font-size: 1.5rem;
@@ -138,7 +136,7 @@ h3 {
 
 .product a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--main-white-color);
 }
 
 .product-name {
@@ -161,8 +159,8 @@ h3 {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #5b7880;
-  color: #ffffff;
+  background-color: var(--design-details-color);
+  color: var(--main-white-color);
   padding: 10px;
   font-size: 2rem;
 }

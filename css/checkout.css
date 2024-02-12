@@ -1,10 +1,3 @@
-body {
-  background-color: #0a3641;
-}
-main {
-  margin: 30px;
-  color: #ffffff;
-}
 h1 {
   font-size: 2.6rem;
 }
@@ -40,7 +33,7 @@ legend {
 .your-information,
 .payment-method {
   box-sizing: border-box;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--main-white-color);
   border-radius: 5px;
   padding: 10px;
 }
@@ -70,12 +63,12 @@ legend {
 
 .personal-information-container input {
   padding: 5px;
-  border: solid 1px #ffffff;
+  border: solid 1px var(--main-white-color);
   border-radius: 5px;
   margin: 10px 0px;
   font-size: 1.5rem;
-  background-color: #0a3641;
-  color: #ffffff;
+  background-color: var(--main-blue-color);
+  color: var(--main-white-color);
 }
 .personal-information-container label {
   font-size: 1.5em;
@@ -92,8 +85,8 @@ legend {
   max-width: none;
 }
 .cta-button {
-  color: #0a3641;
-  background-color: #ffffff;
+  color: var(--main-blue-color);
+  background-color: var(--main-white-color);
   padding: 10px 60px;
   font-size: 2rem;
   font-weight: bold;
@@ -105,13 +98,13 @@ legend {
   box-shadow: 5px 5px 5px black;
 }
 .cta-button:hover {
-  color: #ffffff;
-  background-color: #0a3641;
-  border: 2px solid #ffffff;
+  color: var(--main-white-color);
+  background-color: var(--main-blue-color);
+  border: 2px solid var(--main-white-color);
   transition: ease-in-out 200ms;
 }
 .payment {
-  background-color: #ffffff;
+  background-color: var(--main-white-color);
   padding: 10px;
   border-radius: 5px;
 }
